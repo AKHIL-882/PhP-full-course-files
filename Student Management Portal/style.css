@@ -1,0 +1,89 @@
+*{
+
+    padding: 0;
+    margin: 0;
+
+}
+
+nav{
+    position: fixed;
+    background-color: #D93D04;
+    height: 70px;
+    width: 100%;
+    z-index: 1;
+}
+
+.logo{
+    font-size: 25px;
+    position: relative;
+    left: 5%;
+    color: white;
+    font-weight: bold;
+    line-height: 70px;
+}
+
+ul{
+    position: relative;
+    float: right;
+    margin-right: 20px;
+}
+
+ul li{
+    display: inline;
+    line-height: 70px;
+    margin: 0 5px;
+
+}
+
+ul li a{
+    text-decoration: none;
+}
+
+.main_img{
+    width: 100%;
+    height: 400px;
+}
+
+.section1{
+    padding-top: 70px;
+}
+
+.img_text{
+    position: absolute;
+    top: 25%;
+    left: 23%;
+    color: black;
+    font-weight: bolder;
+    font-size: 35px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.welcome_img{
+
+    width: 100%;
+    height: 250px;
+}
+
+.container{
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.teacher{
+    width: 90%;
+    height: 200px;
+}
+
+footer{
+    background-color: black;
+    height: 70px;
+    width: 100%;
+}
+
+.footer_text{
+    text-align:center;
+    color: white;
+    top: 20%;
+    position: relative;
+}
