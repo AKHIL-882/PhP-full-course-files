@@ -1,3 +1,20 @@
+<?php
+
+    error_reporting(0);
+    session_start();
+    session_destroy();
+
+    if($_SESSION['message']){
+
+        $message = $_SESSION['message'];
+
+        echo "<script>alert('$message')</script>";
+
+    }
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +32,7 @@
         <ul>
             <li><a href="http://">Home</a></li>
             <li><a href="http://">Contact</a></li>
-            <li><a href="http://">Admissions</a></li>
+            <li><a href="registration.php">Admissions</a></li>
             <li><a href="login.php" class="btn btn-success">Login</a></li>
         </ul>
     </nav>
@@ -77,6 +94,33 @@
             </div>
         </div>
     </div>
+
+    <center> <h1> Admissions </h1>  </center>
+
+    <div class="container">
+        <div class="row">
+            <form action="data_check.php" method="POST">
+                <div class="form-group">
+                    <label for="">Name</label>
+                    <input type="text" name="name" id="">
+                </div>
+                <div class="form-group">
+                    <label for="">Email</label>
+                    <input type="email" name="email" id="">
+                </div>
+                <div class="form-group">
+                    <label for="">Phone</label>
+                    <input type="text" name="phone" id="">
+                </div>
+                <div class="form-group">
+                    <label for="">Message</label>
+                    <textarea name="message" id=""></textarea>
+                </div>
+                <input type="submit" class="btn btn-primary" value="apply" name="apply">
+            </form>
+        </div>
+    </div>
+
 
     <footer>
         <h5 class="footer_text">Copyrights @ Duggirala Akhil</h5>
